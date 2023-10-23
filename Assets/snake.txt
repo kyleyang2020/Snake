@@ -1,0 +1,4 @@
+to speed up or slow down the gameplay/speed of snake go to
+- edit
+- project settings
+- change the time from there, the higher the value, the slower the game will be
