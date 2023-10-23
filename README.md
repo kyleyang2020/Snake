@@ -1,2 +1,3 @@
 # Snake
+Simple Snake Game
  
