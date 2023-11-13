@@ -11,7 +11,6 @@ public class SnakeMove : MonoBehaviour
 
     List<Transform> segments; // variable to store all body parts of snake body
     public Transform segmentPrefab; // variable to store the segment
-    public GameObject gameOverScreen; // game over screen
 
     // Start is called before the first frame update
     void Start()
@@ -64,8 +63,7 @@ public class SnakeMove : MonoBehaviour
         // if it hits itself/wall
         else if (collision.tag == "Wall")
         {
-            Time.timeScale = 0; // stops the game after you lose
-            gameOverScreen.SetActive(true); // open up the game over screen
+            SceneManager.LoadScene("GameOverScene"); // goes to gameover scene
         }
     }
 }
